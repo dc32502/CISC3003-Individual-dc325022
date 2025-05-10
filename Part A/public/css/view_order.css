@@ -1,0 +1,104 @@
+.view-order .box-container{
+   background-color: var(--white);
+   border: var(--border);
+   border-radius: .5rem;
+   padding: 2rem;
+   box-shadow: var(--box-shodow);
+}
+
+.view-order .box-container .row{
+   display: flex;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   overflow-x: hidden;
+}
+
+.view-order .box-container .row .col{
+   flex: 1 1 40rem;
+}
+
+.view-order .box-container .row .col .image{
+   height: 17rem;
+   width: 100%;
+   object-fit: contain;
+   margin: 1rem 0;
+}
+
+.view-order .box-container .row .col .title{
+   border-radius: .5rem;
+   margin-bottom: 1rem;
+   padding: 1rem 1.5rem;
+   font-size: 1.7rem;
+   color: var(--light-color);
+   background-color: var(--light-bg);
+   display: inline-block;
+   text-transform: capitalize;
+}
+
+.view-order .box-container .row .col .title i{
+   margin-right: 1rem;
+   color: var(--black);
+}
+
+.view-order .box-container .row .col .price{
+   color: var(--red);
+   font-size: 1.8rem;
+   padding: .5rem 0;
+}
+
+.view-order .box-container .row .col .name{
+   font-size: 2rem;
+   color: var(--black);
+   text-overflow: ellipsis;
+   overflow-x: hidden;
+}
+
+.view-order .box-container .row .col .user{
+   padding: .7rem 0;
+   font-size: 1.7rem;
+   color: var(--light-color);
+   line-height: 1.5;
+}
+
+.view-order .box-container .row .col .user i{
+   margin-right: 1rem;
+   color: var(--main-color);
+}
+
+.view-order .box-container .row .col .grand-total{
+   background-color: var(--black);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   padding:1.5rem;
+   font-size: 2rem;
+   color: var(--white);
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+.view-order .box-container .row .col .grand-total span{
+   color: var(--orange);
+}
+
+.view-order .box-container .row .col .status{
+   font-size: 1.8rem;
+   padding: .5rem 0;
+}
+
+.view-order .box-container .row .col form,
+.view-order .box-container .row .col a{
+    margin-top: 2.2rem;
+}
+
+@media (max-width:768px){
+
+    .view-order .box-container .row .col form,
+    .view-order .box-container .row .col a{
+        margin-top: 0rem;
+    }
+
+}
